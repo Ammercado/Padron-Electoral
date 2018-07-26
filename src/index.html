@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Consultar Padron!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container"> 
+          <section class="cabecera">
+            <h1 id="cabecera2">Consultar el Padron electoral 🗳 </h1>
+          </section>
+      </div>
+      <section class='content' id='main'> 
+        <nav>
+        <div id="menu"> 
+          <ul>
+            <li>
+              <a href="/consultar">Consultar</a>
+            </li>
+            <li>
+              <a href="/login">Iniciar Sesion</a>
+            </li>
+          </ul>
+        </div>   
+        </nav>
+      </section>  
+  </body>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCVxNA7QjvIA19BNYCEEN9C3ro95EiQqgU",
+    authDomain: "padron-001.firebaseapp.com",
+    databaseURL: "https://padron-001.firebaseio.com",
+    projectId: "padron-001",
+    storageBucket: "padron-001.appspot.com",
+    messagingSenderId: "595972768080"
+  };
+  firebase.initializeApp(config);
+</script>
+</html>

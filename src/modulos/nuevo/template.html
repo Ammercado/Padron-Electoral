@@ -1,0 +1,42 @@
+<nav>
+    <div id="menu"> 
+        <ul>
+            <li>
+                <a href="/listar">Lista de Personas</a>
+            </li>
+            <li>
+                <a href="/nuevo">Agregar Nuevo</a>
+            </li>
+            <div id="SesionCerrar">
+                    <button id="btnCerrarSesion" name="login">Cerrar Sesion</button>
+            </div> 
+        </ul>
+    </div>   
+</nav>
+<form action="" class='form'>
+    {{mensaje}}
+    <h4>Agregar datos de la persona</h4>
+    <div class="form-group">
+        <label for="">Nombre y Apellido</label>
+        <input class="form-control" placeholder='' type="text" name='nombre' id='nombre' />
+    </div>
+    <div class="form-group">
+        <label for="">Numero de Documento</label>
+        <input class="form-control" placeholder='' type="number" name='numerodni' id='numerodni' />
+    </div>
+    <div class="form-group">    
+        <label for="">Escuela</label>
+        <input class="form-control" placeholder='' type="text" name='escuela' id='escuela' />
+    </div>
+    <div class="form-group">
+        <label for="">Direccion de la Escuela</label>
+        <input class="form-control" placeholder='' type="text" name='direccion' id='direccion' />
+    </div>
+    <div class="form-group">    
+        <label for="">Mesa</label>
+    <input class="form-control" placeholder='' type="number" name='mesa' id='mesa' />
+    </div>
+    <div class="actions">
+        <button id='boton-nuevo' class='btn btn-primary'>Agregar Persona 📥 </button>
+    </div>
+</form>

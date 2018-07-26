@@ -1,0 +1,38 @@
+<nav>
+    <div id="menu"> 
+        <ul>
+            <li>
+                <a href="/listar">Lista de Personas</a>
+            </li>
+            <li>
+                <a href="/nuevo">Agregar Nuevo</a>
+            </li>
+            <div id="SesionCerrar">
+                    <button id="btnCerrarSesion" name="login">Cerrar Sesion</button>
+            </div> 
+        </ul>
+    </div>   
+</nav> 
+</nav>
+<table class='table '>
+    <thead class='thead-dark'>
+        <tr>
+            <th>Nombre y Apellido</th>
+            <th>Nº Documento</th>
+            <th>Escuela</th>
+            <th>Direccion</th>
+            <th>Mesa</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each personas}}
+            <tr>
+                <td>{{nombre}}</td>
+                <td>{{dni}}</td>
+                <td>{{escuela}}</td>
+                <td>{{direccion}}</td>
+                <td>{{mesa}}</td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
