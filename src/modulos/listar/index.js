@@ -1,4 +1,3 @@
-
 import Handlebars from 'handlebars';
 
 import template from './template.html';
