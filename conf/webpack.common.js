@@ -30,6 +30,13 @@ module.exports = {
     modules: [path.join(process.cwd(), 'src'), 'node_modules'] // directories where to look for modules
   },
 
+  resolve: 
+  {
+    alias:{
+      'handlebars' : 'handlebars/dist/handlebars.js'
+    }
+  },
+
   module: {
     rules: [{
       test: /\.js$/,
